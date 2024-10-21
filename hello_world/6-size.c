@@ -8,7 +8,7 @@ void	ft_size(void)
 {
 	char	charType;
 	int	intType;
-	unsigned int	longintType;
+	long int	longintType;
 	double	longlongintType;
 	float	floatType;
 
