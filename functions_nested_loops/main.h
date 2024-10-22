@@ -1,7 +1,8 @@
 #ifndef PUTCHAR
 #define PUTCHAR
 
-int	_islower();
 char	_putchar();
+int	_islower();
+int	_isalpha();
 
 #endif
