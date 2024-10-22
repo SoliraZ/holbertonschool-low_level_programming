@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "1-main.c"
 
 /**
  * main - Main Function
@@ -15,6 +15,6 @@ void	print_alphabet(void)
 
 	letter = 'a';
 	while (letter <= 'z')
-		_putchar(letter++);
-	_putchar('\n');
+		putchar(letter++);
+	putchar('\n');
 }
