@@ -4,6 +4,8 @@
 /**
  * _islower - Say if its lower case or no.
  *
+ * @c: C is char.
+ * Return: 1 if its lowercase else return 0
  */
 
 int	_islower(int c)
