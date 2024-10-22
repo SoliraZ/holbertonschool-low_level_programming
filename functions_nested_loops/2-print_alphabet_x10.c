@@ -12,7 +12,7 @@ void	print_alphabet_x10(void)
 {
 	int	n;
 
-	n = 0;
+	n = 1;
 	while (n <= 10)
 	{
 		write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
