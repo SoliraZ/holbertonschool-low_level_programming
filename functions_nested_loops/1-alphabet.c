@@ -11,10 +11,5 @@
 
 void	print_alphabet(void)
 {
-	char	letter;
-
-	letter = 'a';
-	while (letter <= 'z')
-		putchar(letter++);
-	putchar('\n');
+	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
 }
