@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -12,14 +12,15 @@ int	print_last_digit(int n)
 {
 	if (n < 0)
 	{
-		n = n % 10;
-		printf("%d", n * -1);
-		return (n * -1);
+		n = n % 10 * -1;
+		write(1, &n, 1);
+		return (n);
 	}
 	else
 	{
-		printf("%d", n % 10);
-		return (n % 10);
+		n = n % 10;
+		write(1, &n, 1);
+		return (n);
 	}
 	return (0);
 }
