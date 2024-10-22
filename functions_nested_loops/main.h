@@ -1,6 +1,7 @@
 #ifndef PUTCHAR
 #define PUTCHAR
 
-void	print_alphabet_x10(); 
+int	_islower();
+char	_putchar();
 
 #endif
