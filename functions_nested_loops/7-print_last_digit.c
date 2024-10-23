@@ -14,14 +14,16 @@ int	print_last_digit(int n)
 	{
 		n = n % 10;
 		n = n * -1;
+		n = n + '0';
 		write(1, &n, 1);
-		return (n);
+		return (n - '0');
 	}
 	else
 	{
 		n = n % 10;
+		n = n + '0';
 		write(1, &n, 1);
-		return (n);
+		return (n - '0');
 	}
 	return (0);
 }
