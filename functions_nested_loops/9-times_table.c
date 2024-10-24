@@ -9,10 +9,24 @@
 void	times_table(void)
 {
 	int	i;
+	int	j;
+	int	result;
 
 	i = 0;
-	while (i <= 9)
+	while (i < 10)
 	{
-		_putchar()
+		j = 0;
+		while (j < 10)
+		{
+			result = i * j;
+			printf("%d", result);
+			if (j < 9)
+				printf(", ");
+			if ((result < 10) && (j < 9))
+				printf(" ");
+			j++;
+		}
+		printf("\n");
+		i++;
 	}
 }

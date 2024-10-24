@@ -10,5 +10,6 @@ int	print_last_digit();
 void	jack_bauer();
 void	ft_printnum();
 int	add();
+void	times_table();
 
 #endif
