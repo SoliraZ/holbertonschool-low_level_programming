@@ -2,7 +2,9 @@
 
 /**
  * add - Additionate two variable.
- * 
+ * @i: int i
+ * @j: int j
+ *
  * Return: 0
  */
 
