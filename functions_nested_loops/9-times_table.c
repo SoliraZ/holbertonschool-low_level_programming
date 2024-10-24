@@ -15,8 +15,8 @@ void	print_num(int n)
 
 	n1 = n / 10;
 	n2 = n % 10;
-	putchar(n1 + '0');
-	putchar(n2 + '0');
+	_putchar(n1 + '0');
+	_putchar(n2 + '0');
 }
 
 /**
@@ -40,17 +40,17 @@ void	times_table(void)
 			if (result > 9)
 				print_num(result);
 			else
-				putchar(result + '0');
+				_putchar(result + '0');
 			if (j < 9)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 			if ((result < 10) && (j < 9))
-				putchar(' ');
+				_putchar(' ');
 			j++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		i++;
 	}
 }
