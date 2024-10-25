@@ -37,6 +37,8 @@ void	times_table(void)
 		while (j < 10)
 		{
 			result = i * j;
+			if (j > 0 && result < 10)
+				_putchar(' ');
 			if (result > 9)
 				print_num(result);
 			else
@@ -46,8 +48,6 @@ void	times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			if ((result < 10) && (j < 9))
-				_putchar(' ');
 			j++;
 		}
 		_putchar('\n');
