@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * _puts - Function _puts
@@ -8,5 +8,13 @@
 
 void	_puts(char *str)
 {
-	printf("%s\n", str);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+	write (1, "\n", 1);
 }
