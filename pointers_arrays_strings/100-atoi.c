@@ -28,7 +28,7 @@ int	_atoi(char *argv)
 	}
 	while (argv[n] >= '0' && argv[n] <= '9')
 	{
-		if (result > -2147483648)
+		if (result > -2147483648 && result < 2147483647)
 			result = (result * 10) + (argv[n] - 48);
 		n++;
 	}
