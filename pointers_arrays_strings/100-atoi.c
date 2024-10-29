@@ -2,30 +2,34 @@
 
 /**
  * _atoi - Atoi Function
- * @s: string
+ * @argv: String
  *
- * Return: The string in int
+ * Return: Result
  */
 
-int	_atoi(char *s)
+int	_atoi(char *argv)
 {
-	int	i;
+	int	n;
 	int	negative;
 	int	result;
 
-	i = 0;
+	n = 0;
 	negative = 1;
 	result = 0;
-	while ((s[i] < '0' && s[i] > '9') || s[i] == '-' || s[i] == '+')
+	while ((argv[n] >= 9 && argv[n] <= 13) || argv[n] == 32)
+		n++;
+	while ((argv[n] >= 9 && argv[n] <= 13) || argv[n] == 32 ||
+			argv[n] == '+' || argv[n] == '-' || (argv[n] >= 'A' && argv[n] <= 'Z')
+			|| (argv[n] >= 'a' && argv[n] <= 'z'))
 	{
-		if (s[i] == '-')
+		if (argv[n] == '-')
 			negative = negative * -1;
-		i++;
+		n++;
 	}
-	while (s[i] >= '0' && s[i] <= '9')
+	while (argv[n] >= '0' && argv[n] <= '9')
 	{
-		result = (result * 10) + (s[i] - '0');
-		i++;
+		result = (result * 10) + (argv[n] - 48);
+		n++;
 	}
 	return (result * negative);
 }
