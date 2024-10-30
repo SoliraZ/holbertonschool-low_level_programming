@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - Function Strcat
+ * _strncat - Function Strncat
  * @dest: Destination
  * @src: Source
  * @n: Size
