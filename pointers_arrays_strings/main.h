@@ -23,4 +23,13 @@ char	*string_toupper();
 char	*cap_string();
 char	*leet();
 
+char	*_memset(char *s, char b, unsigned int n);
+char	*_memcpy();
+char	*_strchr();
+unsigned int	_strspn();
+char	*_strpbrk();
+char	*_strstr();
+void	print_chessboard();
+void	print_diagsums();
+
 #endif
