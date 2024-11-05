@@ -13,7 +13,7 @@ char	*_strpbrk(char *s, char *accept)
 	int	n;
 
 	if (s[0] == '\0' || accept[0] == '\0')
-		return ("test1");
+		return ('\0');
 	while (*s != '\0')
 	{
 		n = 0;
@@ -25,5 +25,5 @@ char	*_strpbrk(char *s, char *accept)
 		}
 		s++;
 	}
-	return ("test2");
+	return ('\0');
 }
