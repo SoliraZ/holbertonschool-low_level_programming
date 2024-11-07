@@ -10,9 +10,6 @@
 
 int	main(int argc, char *argv[])
 {
-	argv[0][0] = '\0';
-	if (argc < 10)
-		_putchar(argc + '0');
-	_putchar('\n');
-	return (0);
+	(void)argv;
+	return (argc);
 }
