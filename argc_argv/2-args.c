@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - Main Function
@@ -10,22 +11,20 @@
 
 int     main(int argc, char *argv[])
 {
-	int     i;
-	int	n;
+	int	i;
+	int	j;
 
-	n = 0;
-	if (argc < 1)
-		return (1);
-	while (n <= (argc - 1))
+	i = 0;
+	while (i < argc)
 	{
-		i = 0;
-		while (argv[n][i])
+		j = 0;
+		while (argv[i][j])
 		{
-			_putchar(argv[n][i]);
-			i++;
+			printf("%c", argv[i][j]);
+			j++;
 		}
-		_putchar('\n');
-		n++;
+		printf("\n");
+		i++;
 	}
 	return (0);
 }
