@@ -22,6 +22,8 @@ dog_t	*new_dog(char *name, float age, char *owner)
 		name = "(nil)";
 	if (owner == NULL)
 		owner = "(nil)";
+	if (age < 0)
+		age = 0;
 	new_dog->name = name;
 	new_dog->age = age;
 	new_dog->owner = owner;
